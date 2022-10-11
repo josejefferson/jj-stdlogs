@@ -29,6 +29,7 @@ export function setMongoose(mongoose: any) {
   }
 
   const schema = new mongoose.Schema({
+    name: String,
     date: { type: Date, expires: 604800 },
     lastUpdate: Date,
     length: Number,
@@ -61,6 +62,7 @@ export function setMongooseModel(model: any) {
 
     if (isNew) {
       return model.create({
+        name: process.env.STDLOGS_NAME,
         date,
         lastUpdate,
         length,
