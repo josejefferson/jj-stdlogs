@@ -20,7 +20,7 @@ class Logger {
     this.previewDone = false
     this.createdOnDB = false
 
-    setInterval(this.sendToServer.bind(this), 60000)
+    setInterval(this.sendToServer.bind(this), 5000)
   }
 
   append(str: string) {
