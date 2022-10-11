@@ -1,6 +1,6 @@
 {
   "name": "@josejefferson/jj-stdlogs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A simple stdout/stderr log store",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
